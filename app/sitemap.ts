@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Case study pages
   const caseStudyPages = [
+    '/case-studies/fatevision',
     '/case-studies/fennec',
   ].map(path => ({ path, priority: 0.7, changeFreq: 'monthly' as const }));
 

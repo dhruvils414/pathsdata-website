@@ -9,6 +9,21 @@ export const metadata = {
 
 const caseStudies = [
   {
+    slug: 'fatevision',
+    industry: 'Consumer Tech',
+    tags: ['Generative AI', 'Amazon Bedrock', 'RAG'],
+    title: 'Pathsdata × Fatevision LLC',
+    subtitle: 'Gen AI-Powered Astrology Platform',
+    description: 'Built an intelligent astrology backend that generates personalized horoscopes, birth chart readings, and cosmic guidance for 50,000+ users daily using Amazon Bedrock, RAG, and Swiss Ephemeris integration.',
+    stats: [
+      { value: '50K+', label: 'Daily Readings' },
+      { value: '< 2s', label: 'Response Time' },
+      { value: '95%', label: 'Satisfaction Rate' },
+      { value: '10x', label: 'Faster Generation' },
+    ],
+    technologies: ['Amazon Bedrock', 'Claude', 'RAG', 'Python', 'FastAPI', 'Lambda'],
+  },
+  {
     slug: 'fennec',
     industry: 'Hospitality & Entertainment',
     tags: ['Generative AI', 'Data Platform'],
