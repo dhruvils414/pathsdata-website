@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 // Site-wide SEO configuration
 export const siteConfig = {
   name: 'PATHSDATA',
@@ -41,7 +43,7 @@ export const siteConfig = {
 };
 
 // Default metadata for pages
-export const defaultMetadata = {
+export const defaultMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: `${siteConfig.name} - AWS Select Tier Consulting Partner`,
@@ -57,13 +59,6 @@ export const defaultMetadata = {
     address: false,
     telephone: false,
   },
-  // Alternate languages (if you have multi-language support)
-  // alternates: {
-  //   languages: {
-  //     'en-US': '/en-US',
-  //     'es': '/es',
-  //   },
-  // },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -91,30 +86,17 @@ export const defaultMetadata = {
   robots: {
     index: true,
     follow: true,
-    nocache: false,
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: false,
       'max-video-preview': -1,
-      'max-image-preview': 'large',
+      'max-image-preview': 'large' as const,
       'max-snippet': -1,
     },
   },
-  // Add verification codes
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
-    // yandex: 'your-yandex-verification-code',
-    // bing: 'your-bing-verification-code',
   },
-  // App links
-  appLinks: {
-    web: {
-      url: siteConfig.url,
-      should_fallback: true,
-    },
-  },
-  // Category for the site
   category: 'technology',
 };
 
