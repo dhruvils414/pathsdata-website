@@ -17,13 +17,13 @@ const deliverables = [
 
 export default function AIAssessmentPage() {
   return (
-    <div className="py-12 px-4">
+    <div className="py-12 px-8">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-16 relative">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[600px] h-[300px] border border-slate-800/30 rounded-full" />
           </div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 px-8 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-4">
             <span className="w-2 h-2 bg-emerald-400 rounded-full" />
             <span className="text-emerald-400 text-sm">AWS Select Tier Consulting Partner · For Startups</span>
           </div>
@@ -38,7 +38,7 @@ export default function AIAssessmentPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {badges.map((badge, i) => (
-              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-sm text-slate-300">
+              <span key={i} className="inline-flex items-center gap-2 px-8 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-violet-400" />{badge}
               </span>
             ))}
@@ -46,7 +46,7 @@ export default function AIAssessmentPage() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-white text-center mb-8">What You Get</h3>
+          <h3 className="text-3xl font-bold text-white text-center mb-8">What You Get</h3>
           <div className="grid grid-cols-2 gap-4">
             {deliverables.map((item, i) => (
               <div key={i} className="p-5 bg-slate-900/60 border border-slate-800/60 rounded-xl">

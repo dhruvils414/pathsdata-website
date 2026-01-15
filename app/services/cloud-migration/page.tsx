@@ -11,7 +11,7 @@ const technologies = ['AWS Migration Hub', 'AWS DMS', 'AWS MGN', 'AWS Applicatio
 
 export default function CloudMigrationPage() {
   return (
-    <div className="py-16 px-4">
+    <div className="py-16 px-8">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-12">
           <div className="w-16 h-16 bg-violet-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -33,7 +33,7 @@ export default function CloudMigrationPage() {
         <div className="mb-12">
           <h2 className="text-xl font-bold text-white mb-6 text-center">Technologies</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {technologies.map((tech, i) => (<span key={i} className="px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-slate-300 text-sm">{tech}</span>))}
+            {technologies.map((tech, i) => (<span key={i} className="px-8 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-slate-300 text-sm">{tech}</span>))}
           </div>
         </div>
         <div className="text-center">

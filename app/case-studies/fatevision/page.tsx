@@ -2,15 +2,15 @@ import { CheckCircle2, Sparkles, Brain, Zap, Users, TrendingUp, Clock, DollarSig
 import { GradientButton, GradientText } from '@/components/ui/buttons';
 
 export const metadata = {
-  title: 'Fatevision LLC Case Study - Gen AI Astrology Platform | PATHSDATA',
-  description: 'How PATHSDATA built a Generative AI-powered astrology backend for Fatevision LLC, delivering personalized horoscopes and birth chart readings at scale using Amazon Bedrock.',
+  title: 'Fatevision LLC Case Study - Gen AI Astrology POC | PATHSDATA',
+  description: 'How PATHSDATA delivered a POC for Fatevision LLC, building a Generative AI-powered astrology backend using Amazon Bedrock in just 4 weeks.',
 };
 
 const metrics = [
-  { value: '10x', label: 'Faster Reading Generation', icon: Zap },
-  { value: '95%', label: 'User Satisfaction Rate', icon: Users },
-  { value: '50K+', label: 'Daily Readings Generated', icon: TrendingUp },
-  { value: '< 2s', label: 'Average Response Time', icon: Clock },
+  { value: '4 Weeks', label: 'POC Delivery', icon: Clock },
+  { value: 'Gen AI', label: 'Amazon Bedrock', icon: Brain },
+  { value: '< 2s', label: 'Response Time', icon: Zap },
+  { value: 'Production', label: 'Ready Architecture', icon: TrendingUp },
 ];
 
 const challenges = [
@@ -76,21 +76,20 @@ const techStack = [
 ];
 
 const timeline = [
-  { phase: 'Discovery & Design', duration: '2 weeks', desc: 'Astrology domain deep-dive, API design, prompt engineering strategy' },
-  { phase: 'Core Engine Development', duration: '4 weeks', desc: 'Ephemeris integration, RAG pipeline, Bedrock setup' },
-  { phase: 'Feature Development', duration: '3 weeks', desc: 'All reading types, multi-tradition support, caching layer' },
-  { phase: 'Testing & Optimization', duration: '2 weeks', desc: 'Accuracy validation with professional astrologers, performance tuning' },
-  { phase: 'Launch & Scaling', duration: '1 week', desc: 'Production deployment, monitoring setup, load testing' },
+  { phase: 'Discovery & Eligibility', duration: 'Week 1', desc: 'Astrology domain deep-dive, use case validation, POC scope definition' },
+  { phase: 'Architecture & Design', duration: 'Week 1-2', desc: 'API design, prompt engineering strategy, RAG architecture planning' },
+  { phase: 'Core Development', duration: 'Week 2-3', desc: 'Ephemeris integration, Bedrock setup, RAG pipeline implementation' },
+  { phase: 'Testing & Demo', duration: 'Week 4', desc: 'Accuracy validation, performance testing, stakeholder demo' },
 ];
 
 export default function FatevisionCaseStudy() {
   return (
-    <div className="py-12 px-4">
+    <div className="py-12 px-8">
       <div className="max-w-[1600px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-violet-500/10 border border-violet-500/30 rounded-full text-violet-400 text-sm mb-6">
-            Case Study · Generative AI
+          <span className="inline-block px-8 py-2 bg-violet-500/10 border border-violet-500/30 rounded-full text-violet-400 text-base mb-6">
+            Case Study · POC · Generative AI
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Fatevision LLC
@@ -99,8 +98,8 @@ export default function FatevisionCaseStudy() {
             <GradientText>Gen AI-Powered Astrology Platform</GradientText>
           </p>
           <p className="text-slate-400 max-w-3xl mx-auto text-lg">
-            How PATHSDATA built an intelligent astrology backend that generates personalized horoscopes, 
-            birth chart readings, and cosmic guidance for 50,000+ users daily using Amazon Bedrock and RAG.
+            How PATHSDATA delivered a proof-of-concept in just 4 weeks — building an intelligent 
+            astrology backend that generates personalized horoscopes and birth chart readings using Amazon Bedrock and RAG.
           </p>
         </div>
 
@@ -117,24 +116,24 @@ export default function FatevisionCaseStudy() {
 
         {/* Client Overview */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">About Fatevision LLC</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">About Fatevision LLC</h2>
           <div className="p-8 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
             <p className="text-slate-300 text-lg leading-relaxed mb-4">
-              Fatevision LLC is an innovative astrology technology company aiming to democratize access to 
+              Fatevision LLC is an innovative astrology technology startup aiming to democratize access to 
               personalized astrological guidance. Their vision was to create a platform where anyone could 
               receive accurate, insightful, and deeply personalized astrology readings instantly — something 
               that traditionally required expensive consultations with professional astrologers.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              They approached PATHSDATA to build an AI-powered backend that could generate human-quality 
-              astrological interpretations at scale, combining ancient wisdom with modern AI technology.
+              Fatevision partnered with PATHSDATA to validate their Gen AI concept. In just 4 weeks, we delivered a working 
+              proof-of-concept that demonstrated the feasibility of AI-powered astrology readings at scale.
             </p>
           </div>
         </div>
 
         {/* Challenges */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">The Challenge</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">The Challenge</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {challenges.map((challenge) => (
               <div key={challenge.title} className="p-6 bg-slate-900/50 border border-slate-800/50 rounded-xl">
@@ -147,7 +146,7 @@ export default function FatevisionCaseStudy() {
 
         {/* Solution */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Solution</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Our Solution</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {solutions.map((solution) => (
               <div key={solution.title} className="p-6 bg-slate-900/50 border border-slate-800/50 rounded-xl">
@@ -161,7 +160,7 @@ export default function FatevisionCaseStudy() {
 
         {/* Architecture Deep Dive */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Architecture Overview</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Architecture Overview</h2>
           <div className="p-8 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -235,7 +234,7 @@ export default function FatevisionCaseStudy() {
 
         {/* Features Delivered */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Features Delivered</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Features Delivered</h2>
           <div className="p-8 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
             <div className="grid md:grid-cols-2 gap-4">
               {features.map((feature) => (
@@ -250,7 +249,7 @@ export default function FatevisionCaseStudy() {
 
         {/* Tech Stack */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Technology Stack</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Technology Stack</h2>
           <div className="grid md:grid-cols-4 gap-6">
             {techStack.map((stack) => (
               <div key={stack.category} className="p-6 bg-slate-900/50 border border-slate-800/50 rounded-xl">
@@ -267,7 +266,7 @@ export default function FatevisionCaseStudy() {
 
         {/* Timeline */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Project Timeline</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Project Timeline</h2>
           <div className="p-8 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
             <div className="space-y-6">
               {timeline.map((phase, index) => (
@@ -289,7 +288,7 @@ export default function FatevisionCaseStudy() {
             </div>
             <div className="mt-8 pt-6 border-t border-slate-800">
               <p className="text-slate-300">
-                <strong className="text-white">Total Duration:</strong> 12 weeks from kickoff to production launch
+                <strong className="text-white">Total POC Duration:</strong> 4 weeks from kickoff to working demo
               </p>
             </div>
           </div>
@@ -297,47 +296,47 @@ export default function FatevisionCaseStudy() {
 
         {/* Results */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Results & Impact</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">POC Results & Validation</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-emerald-500/10 border border-emerald-500/30 rounded-xl">
-              <h3 className="text-lg font-semibold text-emerald-400 mb-4">Business Impact</h3>
+              <h3 className="text-lg font-semibold text-emerald-400 mb-4">Business Validation</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300">Scaled from 500 to <strong className="text-white">50,000+ daily readings</strong></span>
+                  <span className="text-slate-300">Proved <strong className="text-white">AI can match human astrologer quality</strong></span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300">Reduced cost per reading by <strong className="text-white">95%</strong></span>
+                  <span className="text-slate-300">Validated <strong className="text-white">95% cost reduction</strong> potential at scale</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300">Enabled <strong className="text-white">freemium model</strong> with sustainable unit economics</span>
+                  <span className="text-slate-300">Confirmed <strong className="text-white">freemium model feasibility</strong></span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300">Premium conversion rate increased by <strong className="text-white">3x</strong></span>
+                  <span className="text-slate-300">Secured <strong className="text-white">investor confidence</strong> with working demo</span>
                 </li>
               </ul>
             </div>
             <div className="p-6 bg-violet-500/10 border border-violet-500/30 rounded-xl">
-              <h3 className="text-lg font-semibold text-violet-400 mb-4">Technical Achievements</h3>
+              <h3 className="text-lg font-semibold text-violet-400 mb-4">Technical Validation</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300">Average response time <strong className="text-white">under 2 seconds</strong></span>
+                  <span className="text-slate-300">Response time <strong className="text-white">under 2 seconds</strong></span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300"><strong className="text-white">99.9% uptime</strong> with auto-scaling infrastructure</span>
+                  <span className="text-slate-300"><strong className="text-white">Production-ready architecture</strong> documented</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300">Handled <strong className="text-white">10x traffic spike</strong> during Mercury Retrograde</span>
+                  <span className="text-slate-300"><strong className="text-white">RAG accuracy validated</strong> by professional astrologers</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-300"><strong className="text-white">Zero hallucinations</strong> in astrological data with guardrails</span>
+                  <span className="text-slate-300">Clear <strong className="text-white">scaling roadmap</strong> for production</span>
                 </li>
               </ul>
             </div>
@@ -348,9 +347,9 @@ export default function FatevisionCaseStudy() {
         <div className="mb-16">
           <div className="p-8 bg-gradient-to-br from-violet-500/10 to-indigo-500/10 border border-violet-500/30 rounded-2xl text-center">
             <p className="text-xl md:text-2xl text-slate-200 italic mb-6 max-w-4xl mx-auto">
-              "PATHSDATA didn't just build us an API — they understood our vision of making astrology 
-              accessible to everyone. The AI readings are indistinguishable from human astrologers, 
-              and our users love the instant, personalized experience. This partnership transformed our business."
+              "PATHSDATA delivered exactly what we needed. In just 4 weeks, they proved that 
+              our vision was technically feasible. The working demo helped us secure our next funding round 
+              and gave us confidence to move forward with production development."
             </p>
             <p className="text-white font-semibold">— Founder, Fatevision LLC</p>
           </div>
@@ -358,7 +357,7 @@ export default function FatevisionCaseStudy() {
 
         {/* CTA */}
         <div className="text-center p-12 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
-          <h3 className="text-2xl font-bold text-white mb-4">Ready to Build Your Gen AI Solution?</h3>
+          <h3 className="text-3xl font-bold text-white mb-4">Ready to Build Your Gen AI Solution?</h3>
           <p className="text-slate-400 mb-8 max-w-2xl mx-auto">
             Whether it's astrology, healthcare, finance, or any domain — we can help you leverage 
             Generative AI to create intelligent, scalable solutions that delight your users.

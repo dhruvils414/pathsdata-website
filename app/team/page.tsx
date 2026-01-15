@@ -18,10 +18,10 @@ const teamMembers = [
 
 export default function TeamPage() {
   return (
-    <div className="py-16 px-4">
+    <div className="py-16 px-8">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
+          <span className="inline-block px-8 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
             Our Team
           </span>
           <h1 className="text-3xl font-bold text-white mb-2">
@@ -56,7 +56,7 @@ export default function TeamPage() {
                       <Linkedin className="w-5 h-5" />
                     </a>
                   </div>
-                  <p className="text-violet-400 text-sm mb-3">{member.role}</p>
+                  <p className="text-violet-400 text-base mb-3">{member.role}</p>
                   <p className="text-slate-400 text-sm mb-4">{member.bio}</p>
                   <div className="flex flex-wrap gap-2">
                     {member.expertise.map((skill, i) => (

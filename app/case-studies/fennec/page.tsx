@@ -67,7 +67,7 @@ export default function FennecCaseStudyPage() {
       />
       <BreadcrumbJsonLd items={breadcrumbs} />
 
-      <div className="py-16 px-4">
+      <div className="py-16 px-8">
         <div className="max-w-[1600px] mx-auto">
           {/* Back Link */}
           <Link href="/case-studies" className="text-slate-400 text-sm inline-flex items-center gap-1 mb-6 hover:text-white">
@@ -75,10 +75,10 @@ export default function FennecCaseStudyPage() {
           </Link>
 
           <div className="text-center mb-10">
-            <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
+            <span className="inline-block px-8 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
               Case Study
             </span>
-            <h1 className="text-2xl font-bold text-white mb-2">Pathsdata × Fennec</h1>
+            <h1 className="text-3xl font-bold text-white mb-2">Pathsdata × Fennec</h1>
             <p className="text-slate-400 text-sm">AI-Powered Intelligence Platform for the Nightlife Industry</p>
           </div>
 
@@ -89,7 +89,7 @@ export default function FennecCaseStudyPage() {
                 Hospitality & Entertainment Technology
               </span>
             </div>
-            <h2 className="text-2xl font-bold text-white mb-2">Transforming Data Chaos into Profitable Decisions</h2>
+            <h2 className="text-3xl font-bold text-white mb-2">Transforming Data Chaos into Profitable Decisions</h2>
             <p className="text-slate-300">
               Fennec, the comprehensive operating system for the nightlife industry, partnered with Pathsdata to create an AI-powered intelligence platform that transforms how entertainment venues leverage data to drive profitability and customer satisfaction.
             </p>
@@ -110,7 +110,7 @@ export default function FennecCaseStudyPage() {
             <div className="grid grid-cols-2 gap-4">
               {challenges.map((item, i) => (
                 <div key={i} className="p-4 bg-slate-900/60 border border-slate-800/60 rounded-xl">
-                  <h3 className="text-white font-semibold text-sm mb-2">{item.title}</h3>
+                  <h3 className="text-white font-semibold text-base mb-2">{item.title}</h3>
                   <p className="text-slate-400 text-xs">{item.desc}</p>
                 </div>
               ))}
@@ -126,7 +126,7 @@ export default function FennecCaseStudyPage() {
             <div className="grid grid-cols-3 gap-4">
               {solutions.map((item, i) => (
                 <div key={i} className="p-4 bg-slate-900/60 border border-slate-800/60 rounded-xl">
-                  <h3 className="text-white font-semibold text-sm mb-2">{item.title}</h3>
+                  <h3 className="text-white font-semibold text-base mb-2">{item.title}</h3>
                   <p className="text-slate-400 text-xs">{item.desc}</p>
                 </div>
               ))}
@@ -141,7 +141,7 @@ export default function FennecCaseStudyPage() {
                 <div key={i} className="p-4 bg-slate-900/60 border border-slate-800/60 rounded-xl flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="text-white font-semibold text-sm mb-1">{item.title}</h3>
+                    <h3 className="text-white font-semibold text-base mb-1">{item.title}</h3>
                     <p className="text-slate-400 text-xs">{item.desc}</p>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ export default function FennecCaseStudyPage() {
               {transformations.map((item, i) => (
                 <div key={i} className="p-4 bg-slate-900/60 border border-slate-800/60 rounded-xl text-center">
                   <p className="text-slate-500 text-xs mb-1">{item.from}</p>
-                  <p className="text-white font-bold text-sm mb-2">→ {item.to}</p>
+                  <p className="text-white font-bold text-base mb-2">→ {item.to}</p>
                   <p className="text-slate-400 text-xs">{item.desc}</p>
                 </div>
               ))}

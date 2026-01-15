@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { GradientButton } from '@/components/ui/buttons';
 
 export const metadata = {
-  title: 'Case Studies - PATHSDATA',
+  title: 'Case Studies - PATHSDATA | AWS Select Tier Consulting Partner',
   description: 'See how PATHSDATA has helped organizations transform with AI and data solutions.',
 };
 
@@ -11,15 +12,15 @@ const caseStudies = [
   {
     slug: 'fatevision',
     industry: 'Consumer Tech',
-    tags: ['Generative AI', 'Amazon Bedrock', 'RAG'],
+    tags: ['POC', 'Generative AI', 'Amazon Bedrock'],
     title: 'Pathsdata × Fatevision LLC',
-    subtitle: 'Gen AI-Powered Astrology Platform',
-    description: 'Built an intelligent astrology backend that generates personalized horoscopes, birth chart readings, and cosmic guidance for 50,000+ users daily using Amazon Bedrock, RAG, and Swiss Ephemeris integration.',
+    subtitle: 'Gen AI-Powered Astrology Platform (POC)',
+    description: 'Delivered a proof-of-concept in just 4 weeks — an intelligent astrology backend that generates personalized horoscopes and birth chart readings using Amazon Bedrock and RAG.',
     stats: [
-      { value: '50K+', label: 'Daily Readings' },
+      { value: '4 Weeks', label: 'POC Delivery' },
+      { value: 'Gen AI', label: 'Amazon Bedrock' },
       { value: '< 2s', label: 'Response Time' },
-      { value: '95%', label: 'Satisfaction Rate' },
-      { value: '10x', label: 'Faster Generation' },
+      { value: 'Production', label: 'Ready Architecture' },
     ],
     technologies: ['Amazon Bedrock', 'Claude', 'RAG', 'Python', 'FastAPI', 'Lambda'],
   },
@@ -42,14 +43,17 @@ const caseStudies = [
 
 export default function CaseStudiesPage() {
   return (
-    <div className="py-16 px-4">
+    <div className="py-16 px-8">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
-            Case Studies
-          </span>
-          <h1 className="text-2xl font-bold text-white mb-2">Real Results for Real Businesses</h1>
-          <p className="text-slate-400 text-sm">
+          {/* AWS Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6">
+            <Image src="/aws-partner-badge.png" alt="AWS" width={20} height={20} className="h-5 w-auto" />
+            <span className="text-orange-400 font-semibold text-sm">AWS Select Tier Consulting Partner</span>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Real Results for Real Businesses</h1>
+          <p className="text-slate-400">
             See how we&apos;ve helped organizations transform with AI and data solutions.
           </p>
         </div>
@@ -72,7 +76,7 @@ export default function CaseStudiesPage() {
               </div>
               
               <h3 className="text-xl font-bold text-white mb-2">{study.title}</h3>
-              <p className="text-violet-400 text-sm mb-3">{study.subtitle}</p>
+              <p className="text-violet-400 text-base mb-3">{study.subtitle}</p>
               <p className="text-slate-400 text-sm mb-4">{study.description}</p>
 
               <div className="grid grid-cols-4 gap-4 mb-4">

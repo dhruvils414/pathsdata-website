@@ -25,19 +25,19 @@ const whatYouGet = [
 
 export default function AWSPocPage() {
   return (
-    <div className="py-12 px-4">
+    <div className="py-12 px-8">
       <div className="max-w-[1600px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-16 relative">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[600px] h-[300px] border border-slate-800/30 rounded-full" />
           </div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 px-8 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-4">
             <span className="w-2 h-2 bg-emerald-400 rounded-full" />
             <span className="text-emerald-400 text-sm">AWS Select Tier Consulting Partner · 2–4 week delivery</span>
           </div>
           <h1 className="text-3xl font-bold text-white mb-1">PATHSDATA</h1>
-          <p className="text-slate-400 text-sm mb-6">AWS Select Tier Consulting Partner</p>
+          <p className="text-slate-400 text-base mb-6">AWS Select Tier Consulting Partner</p>
           <h2 className="text-3xl font-bold text-white mb-1">Free AWS-Funded POC for Startups & Tech-First Enterprise</h2>
           <h3 className="text-xl mb-6"><GradientText>from Pre-Seed to Series B</GradientText></h3>
           <p className="text-lg text-white mb-2">Accelerate with Generative AI, Agentic AI, ML and Data Solutions on AWS</p>
@@ -49,7 +49,7 @@ export default function AWSPocPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {badges.map((badge, i) => (
-              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-sm text-slate-300">
+              <span key={i} className="inline-flex items-center gap-2 px-8 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-violet-400" />{badge}
               </span>
             ))}
@@ -59,7 +59,7 @@ export default function AWSPocPage() {
         {/* Program Journey */}
         <div className="mb-16">
           <p className="text-violet-400 text-xs text-center mb-2">PROGRAM JOURNEY</p>
-          <h3 className="text-2xl font-bold text-white text-center mb-2">How it Works</h3>
+          <h3 className="text-3xl font-bold text-white text-center mb-2">How it Works</h3>
           <p className="text-slate-400 text-center mb-8">A structured path from idea validation to production-ready AI solutions</p>
           <div className="space-y-4">
             {journeySteps.map((step, i) => (
@@ -70,7 +70,7 @@ export default function AWSPocPage() {
                   </span>
                   <div>
                     <h4 className="text-white font-semibold mb-1">{step.title}</h4>
-                    <p className="text-slate-400 text-sm mb-2">{step.desc}</p>
+                    <p className="text-slate-400 text-base mb-2">{step.desc}</p>
                     <ul className="space-y-1">
                       {step.items.map((item, j) => (
                         <li key={j} className="text-slate-500 text-xs flex items-center gap-2">
@@ -87,7 +87,7 @@ export default function AWSPocPage() {
 
         {/* What You Get */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-white text-center mb-8">What You Get</h3>
+          <h3 className="text-3xl font-bold text-white text-center mb-8">What You Get</h3>
           <div className="grid grid-cols-2 gap-4">
             {whatYouGet.map((item, i) => (
               <div key={i} className="p-5 bg-slate-900/60 border border-slate-800/60 rounded-xl">

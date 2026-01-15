@@ -48,7 +48,7 @@ export default function HomePage() {
       <FAQJsonLd faqs={faqs} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-4 overflow-hidden">
+      <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-8 overflow-hidden">
         {/* Decorative dots */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-[20%] left-[10%] w-1 h-1 bg-slate-600 rounded-full" />
@@ -67,6 +67,18 @@ export default function HomePage() {
         </div>
 
         <div className="text-center z-10">
+          {/* AWS Partner Badge in Hero */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-8">
+            <Image 
+              src="/aws-partner-badge.png" 
+              alt="AWS Select Tier Services Partner" 
+              width={24} 
+              height={24}
+              className="h-6 w-auto"
+            />
+            <span className="text-orange-400 font-semibold text-sm">AWS Select Tier Consulting Partner</span>
+          </div>
+          
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif italic text-white mb-2">
             Simplify the Journey.
           </h1>
@@ -80,33 +92,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* AWS Partner Badge */}
-      <section className="py-16 px-4">
-        <div className="flex justify-center">
-          <div className="inline-flex items-center gap-4 px-8 py-5 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
-            <Image 
-              src="/aws-partner-badge.png" 
-              alt="AWS Select Tier Services Partner" 
-              width={80} 
-              height={80}
-              className="h-16 w-auto"
-            />
-            <div>
-              <p className="text-white text-xl font-semibold">AWS Select Tier Consulting Partner</p>
-              <p className="text-slate-400 text-sm">Amazon Web Services Partner Network</p>
+      {/* AWS Partner Badge - Prominent */}
+      <section className="py-12 px-8">
+        <div className="max-w-[1600px] mx-auto">
+          <div className="bg-gradient-to-r from-orange-500/10 via-slate-900/50 to-orange-500/10 border border-orange-500/20 rounded-2xl p-8">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <Image 
+                src="/aws-partner-badge.png" 
+                alt="AWS Select Tier Services Partner" 
+                width={120} 
+                height={120}
+                className="h-24 w-auto"
+              />
+              <div className="text-center md:text-left">
+                <p className="text-orange-400 text-sm font-semibold uppercase tracking-wide mb-1">Official Partner</p>
+                <p className="text-white text-2xl md:text-3xl font-bold mb-2">AWS Select Tier Consulting Partner</p>
+                <p className="text-slate-400">Amazon Web Services Partner Network · AI & Data Specialization</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why PATHSDATA Born */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-8">
         <div className="max-w-[1600px] mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-8 border border-slate-700/50">
               Why PATHSDATA Born
             </span>
-            <p className="text-2xl md:text-3xl text-white max-w-[1400px] mx-auto leading-relaxed">
+            <p className="text-3xl md:text-4xl text-white max-w-[1400px] mx-auto leading-relaxed">
               A strategic technology partner delivering{' '}
               <span className="px-3 py-1 border border-slate-600 rounded-lg text-indigo-300">real-world business</span>{' '}
               impact through premium consulting and AI solution.
@@ -142,25 +157,25 @@ export default function HomePage() {
       </section>
 
       {/* Our Vision */}
-      <section className="py-14 px-4">
+      <section className="py-14 px-8">
         <div className="max-w-[1600px] mx-auto text-center">
           <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-8 border border-slate-700/50">
             Our Vision
           </span>
-          <p className="text-3xl md:text-4xl font-serif italic text-slate-300 leading-relaxed">
+          <p className="text-4xl md:text-5xl font-serif italic text-slate-300 leading-relaxed">
             To empower businesses to achieve outcomes effortlessly, while making their journey toward success easier at every step.
           </p>
         </div>
       </section>
 
       {/* Services */}
-      <section id="services" className="py-14 px-4">
+      <section id="services" className="py-14 px-8">
         <div className="max-w-[1600px] mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-6 border border-slate-700/50">
               What We Do
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
               End-to-End AWS <GradientText>Consulting Services</GradientText>
             </h2>
           </div>
@@ -185,13 +200,13 @@ export default function HomePage() {
       </section>
 
       {/* Programs */}
-      <section className="py-14 px-4">
+      <section className="py-14 px-8">
         <div className="max-w-[1600px] mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-6 border border-slate-700/50">
               AWS Partner Programs
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
               Accelerate Your <GradientText>AI & Cloud Journey</GradientText>
             </h2>
           </div>
@@ -218,8 +233,8 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
+      <section className="py-16 px-8 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
         <p className="text-slate-400 mb-8 max-w-xl mx-auto">
           Let&apos;s discuss how we can help you achieve your AI and data goals.
         </p>

@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { GradientText, GradientButton } from '@/components/ui/buttons';
 
 export const metadata = {
-  title: 'AWS Partner Programs - PATHSDATA',
+  title: 'AWS Partner Programs - PATHSDATA | AWS Select Tier Consulting Partner',
   description: 'AWS-funded programs for startups and enterprises. POC validation, AI assessment, and migration acceleration.',
 };
 
@@ -36,12 +37,17 @@ const programs = [
 
 export default function ProgramsPage() {
   return (
-    <div className="py-16 px-4">
+    <div className="py-16 px-8">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">AWS Partner Programs</span>
-          <h1 className="text-3xl font-bold text-white mb-2">Accelerate Your</h1>
-          <h2 className="text-3xl font-bold"><GradientText>AI & Cloud Journey</GradientText></h2>
+          {/* AWS Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6">
+            <Image src="/aws-partner-badge.png" alt="AWS" width={20} height={20} className="h-5 w-auto" />
+            <span className="text-orange-400 font-semibold text-sm">AWS Select Tier Consulting Partner</span>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Accelerate Your</h1>
+          <h2 className="text-4xl md:text-5xl font-bold"><GradientText>AI & Cloud Journey</GradientText></h2>
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">AWS-funded programs to help you validate, build, and scale.</p>
         </div>
 
@@ -52,7 +58,7 @@ export default function ProgramsPage() {
                 <div className="flex-1">
                   <span className="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded-full mb-3">{program.badge}</span>
                   <h3 className="text-xl font-bold text-white mb-1">{program.title}</h3>
-                  <p className="text-violet-400 text-sm mb-2">{program.subtitle}</p>
+                  <p className="text-violet-400 text-base mb-2">{program.subtitle}</p>
                   <p className="text-slate-400 text-sm mb-4">{program.desc}</p>
                   <div className="flex flex-wrap gap-3">
                     {program.highlights.map((h, i) => (

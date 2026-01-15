@@ -53,7 +53,7 @@ export default function DataEngineeringPage() {
       />
       <BreadcrumbJsonLd items={breadcrumbs} />
 
-      <div className="py-16 px-4">
+      <div className="py-16 px-8">
         <div className="max-w-[1600px] mx-auto">
           {/* Hero */}
           <div className="text-center mb-12">
@@ -84,7 +84,7 @@ export default function DataEngineeringPage() {
             <h2 className="text-xl font-bold text-white mb-6 text-center">Technologies We Use</h2>
             <div className="flex flex-wrap justify-center gap-3">
               {technologies.map((tech, i) => (
-                <span key={i} className="px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-slate-300 text-sm">
+                <span key={i} className="px-8 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-slate-300 text-sm">
                   {tech}
                 </span>
               ))}
@@ -100,7 +100,7 @@ export default function DataEngineeringPage() {
                   <span className="inline-flex items-center justify-center w-8 h-8 bg-violet-500/20 rounded-lg text-violet-400 text-sm font-bold mb-2">
                     {step.n}
                   </span>
-                  <h3 className="text-white font-semibold text-sm mb-1">{step.title}</h3>
+                  <h3 className="text-white font-semibold text-base mb-1">{step.title}</h3>
                   <p className="text-slate-400 text-xs">{step.desc}</p>
                 </div>
               ))}
