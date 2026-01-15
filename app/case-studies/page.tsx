@@ -10,6 +10,21 @@ export const metadata = {
 
 const caseStudies = [
   {
+    slug: 'enterprise-lakehouse',
+    industry: 'Enterprise',
+    tags: ['Data Engineering', 'Lakehouse', 'Apache Iceberg'],
+    title: 'National Enterprise Client',
+    subtitle: 'Unified Data Lakehouse — Eliminating Vendor Dependency',
+    description: 'Replaced a fragmented 3-vendor data ecosystem with a unified AWS lakehouse. Reduced report delivery from 5-7 days to minutes while eliminating vendor lock-in and finger-pointing.',
+    stats: [
+      { value: '5-7 Days → Min', label: 'Report Time' },
+      { value: '60%', label: 'Cost Reduction' },
+      { value: 'Zero', label: 'Vendor Lock-in' },
+      { value: '16 Weeks', label: 'Delivery' },
+    ],
+    technologies: ['Apache Iceberg', 'Polars', 'PyIceberg', 'ECS', 'S3', 'QuickSight'],
+  },
+  {
     slug: 'fatevision',
     industry: 'Consumer Tech',
     tags: ['POC', 'Generative AI', 'Amazon Bedrock'],
