@@ -67,15 +67,15 @@ export default function FennecCaseStudyPage() {
       />
       <BreadcrumbJsonLd items={breadcrumbs} />
 
-      <div className="py-16 px-6">
-        <div className="max-w-[1400px] mx-auto">
+      <div className="py-16 px-4">
+        <div className="max-w-[1600px] mx-auto">
           {/* Back Link */}
           <Link href="/case-studies" className="text-slate-400 text-sm inline-flex items-center gap-1 mb-6 hover:text-white">
             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Case Studies
           </Link>
 
           <div className="text-center mb-10">
-            <span className="inline-block px-6 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
+            <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
               Case Study
             </span>
             <h1 className="text-2xl font-bold text-white mb-2">Pathsdata × Fennec</h1>

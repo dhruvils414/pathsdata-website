@@ -48,7 +48,7 @@ export default function HomePage() {
       <FAQJsonLd faqs={faqs} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-6 overflow-hidden">
+      <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-4 overflow-hidden">
         {/* Decorative dots */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-[20%] left-[10%] w-1 h-1 bg-slate-600 rounded-full" />
@@ -81,7 +81,7 @@ export default function HomePage() {
       </section>
 
       {/* AWS Partner Badge */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-4">
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-4 px-8 py-5 bg-slate-900/50 border border-slate-800/50 rounded-2xl">
             <Image 
@@ -100,13 +100,13 @@ export default function HomePage() {
       </section>
 
       {/* Why PATHSDATA Born */}
-      <section className="py-24 px-6">
-        <div className="max-w-[1400px] mx-auto">
+      <section className="py-16 px-4">
+        <div className="max-w-[1600px] mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-8 border border-slate-700/50">
               Why PATHSDATA Born
             </span>
-            <p className="text-2xl md:text-3xl text-white max-w-[1200px] mx-auto leading-relaxed">
+            <p className="text-2xl md:text-3xl text-white max-w-[1400px] mx-auto leading-relaxed">
               A strategic technology partner delivering{' '}
               <span className="px-3 py-1 border border-slate-600 rounded-lg text-indigo-300">real-world business</span>{' '}
               impact through premium consulting and AI solution.
@@ -142,8 +142,8 @@ export default function HomePage() {
       </section>
 
       {/* Our Vision */}
-      <section className="py-20 px-6">
-        <div className="max-w-[1200px] mx-auto text-center">
+      <section className="py-14 px-4">
+        <div className="max-w-[1600px] mx-auto text-center">
           <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-8 border border-slate-700/50">
             Our Vision
           </span>
@@ -154,8 +154,8 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-20 px-6">
-        <div className="max-w-[1400px] mx-auto">
+      <section id="services" className="py-14 px-4">
+        <div className="max-w-[1600px] mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-6 border border-slate-700/50">
               What We Do
@@ -185,8 +185,8 @@ export default function HomePage() {
       </section>
 
       {/* Programs */}
-      <section className="py-20 px-6">
-        <div className="max-w-[1400px] mx-auto">
+      <section className="py-14 px-4">
+        <div className="max-w-[1600px] mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-5 py-2 bg-slate-800/50 rounded-full text-slate-300 text-sm mb-6 border border-slate-700/50">
               AWS Partner Programs
@@ -218,7 +218,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 text-center">
+      <section className="py-16 px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
         <p className="text-slate-400 mb-8 max-w-xl mx-auto">
           Let&apos;s discuss how we can help you achieve your AI and data goals.

@@ -11,8 +11,8 @@ const technologies = ['Amazon QuickSight', 'Tableau', 'Power BI', 'Looker', 'Apa
 
 export default function BusinessIntelligencePage() {
   return (
-    <div className="py-16 px-6">
-      <div className="max-w-[1400px] mx-auto">
+    <div className="py-16 px-4">
+      <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-12">
           <div className="w-16 h-16 bg-violet-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
             <BarChart3 className="w-8 h-8 text-violet-400" />
@@ -33,7 +33,7 @@ export default function BusinessIntelligencePage() {
         <div className="mb-12">
           <h2 className="text-xl font-bold text-white mb-6 text-center">Technologies</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {technologies.map((tech, i) => (<span key={i} className="px-6 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-slate-300 text-sm">{tech}</span>))}
+            {technologies.map((tech, i) => (<span key={i} className="px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-slate-300 text-sm">{tech}</span>))}
           </div>
         </div>
         <div className="text-center">

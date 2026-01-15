@@ -197,8 +197,8 @@ export default function IcebergBlogPost() {
       />
       <BreadcrumbJsonLd items={breadcrumbs} />
 
-      <article className="py-12 px-6">
-        <div className="max-w-[1200px] mx-auto">
+      <article className="py-12 px-4">
+        <div className="max-w-[1400px] mx-auto">
           {/* Back Link */}
           <Link href="/blog" className="text-slate-400 text-sm inline-flex items-center gap-1 mb-8 hover:text-white transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
@@ -423,7 +423,7 @@ export default function IcebergBlogPost() {
 
               <h3 className="text-lg font-semibold text-white mb-3">Creating an Iceberg Table</h3>
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">SQL</span>
                   <span className="text-slate-500 text-xs">create_table.sql</span>
                 </div>
@@ -458,7 +458,7 @@ export default function IcebergBlogPost() {
               </div>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">SQL</span>
                   <span className="text-slate-500 text-xs">time_travel.sql</span>
                 </div>
@@ -493,43 +493,43 @@ export default function IcebergBlogPost() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-slate-700">
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Operation</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Traditional Lake</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Iceberg</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Operation</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Traditional Lake</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Iceberg</th>
                     </tr>
                   </thead>
                   <tbody className="text-slate-300">
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Add column</td>
-                      <td className="py-3 px-6 text-red-400">Breaks old readers</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Safe, null for old data</td>
+                      <td className="py-3 px-4">Add column</td>
+                      <td className="py-3 px-4 text-red-400">Breaks old readers</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Safe, null for old data</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Rename column</td>
-                      <td className="py-3 px-6 text-red-400">Full rewrite or alias hacks</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Metadata only</td>
+                      <td className="py-3 px-4">Rename column</td>
+                      <td className="py-3 px-4 text-red-400">Full rewrite or alias hacks</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Metadata only</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Drop column</td>
-                      <td className="py-3 px-6 text-red-400">Data still present</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Metadata only, files unchanged</td>
+                      <td className="py-3 px-4">Drop column</td>
+                      <td className="py-3 px-4 text-red-400">Data still present</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Metadata only, files unchanged</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Widen type</td>
-                      <td className="py-3 px-6 text-red-400">Full rewrite</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Automatic promotion</td>
+                      <td className="py-3 px-4">Widen type</td>
+                      <td className="py-3 px-4 text-red-400">Full rewrite</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Automatic promotion</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-6">Reorder columns</td>
-                      <td className="py-3 px-6 text-red-400">Not possible</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Metadata only</td>
+                      <td className="py-3 px-4">Reorder columns</td>
+                      <td className="py-3 px-4 text-red-400">Not possible</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Metadata only</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">SQL</span>
                   <span className="text-slate-500 text-xs">schema_evolution.sql</span>
                 </div>
@@ -544,7 +544,7 @@ export default function IcebergBlogPost() {
               </p>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">SQL</span>
                   <span className="text-slate-500 text-xs">partition_evolution.sql</span>
                 </div>
@@ -569,60 +569,60 @@ export default function IcebergBlogPost() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-slate-700">
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Feature</th>
-                      <th className="text-left py-3 px-6 text-cyan-400 font-medium">Apache Iceberg</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Delta Lake</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Apache Hudi</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Feature</th>
+                      <th className="text-left py-3 px-4 text-cyan-400 font-medium">Apache Iceberg</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Delta Lake</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Apache Hudi</th>
                     </tr>
                   </thead>
                   <tbody className="text-slate-300">
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Origin</td>
-                      <td className="py-3 px-6">Netflix</td>
-                      <td className="py-3 px-6">Databricks</td>
-                      <td className="py-3 px-6">Uber</td>
+                      <td className="py-3 px-4">Origin</td>
+                      <td className="py-3 px-4">Netflix</td>
+                      <td className="py-3 px-4">Databricks</td>
+                      <td className="py-3 px-4">Uber</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Hidden Partitioning</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Yes</td>
-                      <td className="py-3 px-6 text-red-400">✗ No</td>
-                      <td className="py-3 px-6 text-red-400">✗ No</td>
+                      <td className="py-3 px-4">Hidden Partitioning</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Yes</td>
+                      <td className="py-3 px-4 text-red-400">✗ No</td>
+                      <td className="py-3 px-4 text-red-400">✗ No</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Partition Evolution</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Yes</td>
-                      <td className="py-3 px-6 text-red-400">✗ No</td>
-                      <td className="py-3 px-6 text-red-400">✗ No</td>
+                      <td className="py-3 px-4">Partition Evolution</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Yes</td>
+                      <td className="py-3 px-4 text-red-400">✗ No</td>
+                      <td className="py-3 px-4 text-red-400">✗ No</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Schema Evolution</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Full</td>
-                      <td className="py-3 px-6 text-amber-400">Partial</td>
-                      <td className="py-3 px-6 text-amber-400">Partial</td>
+                      <td className="py-3 px-4">Schema Evolution</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Full</td>
+                      <td className="py-3 px-4 text-amber-400">Partial</td>
+                      <td className="py-3 px-4 text-amber-400">Partial</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Multi-Engine Support</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Excellent</td>
-                      <td className="py-3 px-6 text-amber-400">Spark-centric</td>
-                      <td className="py-3 px-6 text-amber-400">Good</td>
+                      <td className="py-3 px-4">Multi-Engine Support</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Excellent</td>
+                      <td className="py-3 px-4 text-amber-400">Spark-centric</td>
+                      <td className="py-3 px-4 text-amber-400">Good</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">AWS Native Support</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Athena, EMR, Glue</td>
-                      <td className="py-3 px-6 text-amber-400">Limited</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ EMR, Glue</td>
+                      <td className="py-3 px-4">AWS Native Support</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Athena, EMR, Glue</td>
+                      <td className="py-3 px-4 text-amber-400">Limited</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ EMR, Glue</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Streaming Ingestion</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Yes</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Yes</td>
-                      <td className="py-3 px-6 text-emerald-400">✓ Excellent</td>
+                      <td className="py-3 px-4">Streaming Ingestion</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Yes</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Yes</td>
+                      <td className="py-3 px-4 text-emerald-400">✓ Excellent</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-6">Vendor Lock-in</td>
-                      <td className="py-3 px-6 text-emerald-400">None</td>
-                      <td className="py-3 px-6 text-amber-400">Databricks features</td>
-                      <td className="py-3 px-6 text-emerald-400">None</td>
+                      <td className="py-3 px-4">Vendor Lock-in</td>
+                      <td className="py-3 px-4 text-emerald-400">None</td>
+                      <td className="py-3 px-4 text-amber-400">Databricks features</td>
+                      <td className="py-3 px-4 text-emerald-400">None</td>
                     </tr>
                   </tbody>
                 </table>
@@ -678,7 +678,7 @@ export default function IcebergBlogPost() {
 
               <h3 className="text-lg font-semibold text-white mb-3">Reading Iceberg with PySpark on EMR</h3>
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">Python</span>
                   <span className="text-slate-500 text-xs">spark_iceberg.py</span>
                 </div>
@@ -693,7 +693,7 @@ export default function IcebergBlogPost() {
               </p>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">SQL</span>
                   <span className="text-slate-500 text-xs">merge_into.sql</span>
                 </div>
@@ -716,7 +716,7 @@ export default function IcebergBlogPost() {
               </p>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">SQL</span>
                   <span className="text-slate-500 text-xs">maintenance.sql</span>
                 </div>
@@ -730,31 +730,31 @@ export default function IcebergBlogPost() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-slate-700">
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Operation</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Frequency</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Purpose</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Operation</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Frequency</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Purpose</th>
                     </tr>
                   </thead>
                   <tbody className="text-slate-300">
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Expire Snapshots</td>
-                      <td className="py-3 px-6">Daily</td>
-                      <td className="py-3 px-6">Remove old metadata, enable file cleanup</td>
+                      <td className="py-3 px-4">Expire Snapshots</td>
+                      <td className="py-3 px-4">Daily</td>
+                      <td className="py-3 px-4">Remove old metadata, enable file cleanup</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Remove Orphan Files</td>
-                      <td className="py-3 px-6">Weekly</td>
-                      <td className="py-3 px-6">Delete unreferenced data files</td>
+                      <td className="py-3 px-4">Remove Orphan Files</td>
+                      <td className="py-3 px-4">Weekly</td>
+                      <td className="py-3 px-4">Delete unreferenced data files</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Compact Data Files</td>
-                      <td className="py-3 px-6">Daily/Weekly</td>
-                      <td className="py-3 px-6">Merge small files, improve query performance</td>
+                      <td className="py-3 px-4">Compact Data Files</td>
+                      <td className="py-3 px-4">Daily/Weekly</td>
+                      <td className="py-3 px-4">Merge small files, improve query performance</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-6">Rewrite Manifests</td>
-                      <td className="py-3 px-6">Weekly</td>
-                      <td className="py-3 px-6">Optimize query planning</td>
+                      <td className="py-3 px-4">Rewrite Manifests</td>
+                      <td className="py-3 px-4">Weekly</td>
+                      <td className="py-3 px-4">Optimize query planning</td>
                     </tr>
                   </tbody>
                 </table>
@@ -799,7 +799,7 @@ export default function IcebergBlogPost() {
                 <GradientButton href="/contact">Schedule a Consultation</GradientButton>
                 <Link 
                   href="/services/data-engineering" 
-                  className="px-6 py-2.5 border border-slate-600 text-slate-300 rounded-full text-sm hover:border-cyan-500/50 hover:text-white transition-colors inline-flex items-center gap-2"
+                  className="px-4 py-2.5 border border-slate-600 text-slate-300 rounded-full text-sm hover:border-cyan-500/50 hover:text-white transition-colors inline-flex items-center gap-2"
                 >
                   Data Engineering Services <ArrowRight className="w-4 h-4" />
                 </Link>

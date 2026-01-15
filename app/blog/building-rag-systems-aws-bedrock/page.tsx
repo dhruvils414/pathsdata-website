@@ -255,8 +255,8 @@ export default function RAGBlogPost() {
       />
       <BreadcrumbJsonLd items={breadcrumbs} />
 
-      <article className="py-12 px-6">
-        <div className="max-w-[1200px] mx-auto">
+      <article className="py-12 px-4">
+        <div className="max-w-[1400px] mx-auto">
           {/* Back Link */}
           <Link href="/blog" className="text-slate-400 text-sm inline-flex items-center gap-1 mb-8 hover:text-white transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
@@ -437,7 +437,7 @@ export default function RAGBlogPost() {
               </p>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">Python</span>
                   <span className="text-slate-500 text-xs">bedrock_setup.py</span>
                 </div>
@@ -461,36 +461,36 @@ export default function RAGBlogPost() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-slate-700">
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Model</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Best For</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Context</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Cost</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Model</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Best For</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Context</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Cost</th>
                     </tr>
                   </thead>
                   <tbody className="text-slate-300">
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6 text-white">Claude 3.5 Sonnet</td>
-                      <td className="py-3 px-6">Best balance of speed & quality</td>
-                      <td className="py-3 px-6">200K tokens</td>
-                      <td className="py-3 px-6 text-emerald-400">$$</td>
+                      <td className="py-3 px-4 text-white">Claude 3.5 Sonnet</td>
+                      <td className="py-3 px-4">Best balance of speed & quality</td>
+                      <td className="py-3 px-4">200K tokens</td>
+                      <td className="py-3 px-4 text-emerald-400">$$</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6 text-white">Claude 3 Opus</td>
-                      <td className="py-3 px-6">Complex reasoning tasks</td>
-                      <td className="py-3 px-6">200K tokens</td>
-                      <td className="py-3 px-6 text-amber-400">$$$$</td>
+                      <td className="py-3 px-4 text-white">Claude 3 Opus</td>
+                      <td className="py-3 px-4">Complex reasoning tasks</td>
+                      <td className="py-3 px-4">200K tokens</td>
+                      <td className="py-3 px-4 text-amber-400">$$$$</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6 text-white">Claude 3 Haiku</td>
-                      <td className="py-3 px-6">High-volume, simple queries</td>
-                      <td className="py-3 px-6">200K tokens</td>
-                      <td className="py-3 px-6 text-emerald-400">$</td>
+                      <td className="py-3 px-4 text-white">Claude 3 Haiku</td>
+                      <td className="py-3 px-4">High-volume, simple queries</td>
+                      <td className="py-3 px-4">200K tokens</td>
+                      <td className="py-3 px-4 text-emerald-400">$</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-6 text-white">Titan Embeddings v2</td>
-                      <td className="py-3 px-6">Document embeddings</td>
-                      <td className="py-3 px-6">8K tokens</td>
-                      <td className="py-3 px-6 text-emerald-400">$</td>
+                      <td className="py-3 px-4 text-white">Titan Embeddings v2</td>
+                      <td className="py-3 px-4">Document embeddings</td>
+                      <td className="py-3 px-4">8K tokens</td>
+                      <td className="py-3 px-4 text-emerald-400">$</td>
                     </tr>
                   </tbody>
                 </table>
@@ -546,7 +546,7 @@ export default function RAGBlogPost() {
 
               <h3 className="text-lg font-semibold text-white mb-3">OpenSearch Serverless Setup</h3>
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">Python</span>
                   <span className="text-slate-500 text-xs">vector_store.py</span>
                 </div>
@@ -579,7 +579,7 @@ export default function RAGBlogPost() {
 
               <h3 className="text-lg font-semibold text-white mb-3">Recommended Chunking Strategy</h3>
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">Python</span>
                   <span className="text-slate-500 text-xs">chunking.py</span>
                 </div>
@@ -593,31 +593,31 @@ export default function RAGBlogPost() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-slate-700">
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Content Type</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Chunk Size</th>
-                      <th className="text-left py-3 px-6 text-slate-400 font-medium">Overlap</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Content Type</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Chunk Size</th>
+                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Overlap</th>
                     </tr>
                   </thead>
                   <tbody className="text-slate-300">
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Technical documentation</td>
-                      <td className="py-3 px-6">1000-1500 tokens</td>
-                      <td className="py-3 px-6">200 tokens (20%)</td>
+                      <td className="py-3 px-4">Technical documentation</td>
+                      <td className="py-3 px-4">1000-1500 tokens</td>
+                      <td className="py-3 px-4">200 tokens (20%)</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Legal documents</td>
-                      <td className="py-3 px-6">500-800 tokens</td>
-                      <td className="py-3 px-6">100 tokens (15%)</td>
+                      <td className="py-3 px-4">Legal documents</td>
+                      <td className="py-3 px-4">500-800 tokens</td>
+                      <td className="py-3 px-4">100 tokens (15%)</td>
                     </tr>
                     <tr className="border-b border-slate-800">
-                      <td className="py-3 px-6">Q&A / FAQs</td>
-                      <td className="py-3 px-6">Per question</td>
-                      <td className="py-3 px-6">None</td>
+                      <td className="py-3 px-4">Q&A / FAQs</td>
+                      <td className="py-3 px-4">Per question</td>
+                      <td className="py-3 px-4">None</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-6">Code files</td>
-                      <td className="py-3 px-6">Per function/class</td>
-                      <td className="py-3 px-6">Include imports</td>
+                      <td className="py-3 px-4">Code files</td>
+                      <td className="py-3 px-4">Per function/class</td>
+                      <td className="py-3 px-4">Include imports</td>
                     </tr>
                   </tbody>
                 </table>
@@ -641,7 +641,7 @@ export default function RAGBlogPost() {
               </p>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">Python</span>
                   <span className="text-slate-500 text-xs">hybrid_search.py</span>
                 </div>
@@ -705,7 +705,7 @@ export default function RAGBlogPost() {
               </p>
 
               <div className="mb-6">
-                <div className="flex items-center justify-between bg-slate-800 px-6 py-2 rounded-t-lg border border-slate-700 border-b-0">
+                <div className="flex items-center justify-between bg-slate-800 px-4 py-2 rounded-t-lg border border-slate-700 border-b-0">
                   <span className="text-slate-400 text-sm">Python</span>
                   <span className="text-slate-500 text-xs">evaluation.py</span>
                 </div>
@@ -796,7 +796,7 @@ export default function RAGBlogPost() {
                 <GradientButton href="/contact">Schedule a Consultation</GradientButton>
                 <Link 
                   href="/programs/aws-poc" 
-                  className="px-6 py-2.5 border border-slate-600 text-slate-300 rounded-full text-sm hover:border-violet-500/50 hover:text-white transition-colors inline-flex items-center gap-2"
+                  className="px-4 py-2.5 border border-slate-600 text-slate-300 rounded-full text-sm hover:border-violet-500/50 hover:text-white transition-colors inline-flex items-center gap-2"
                 >
                   Explore AWS POC Program <ArrowRight className="w-4 h-4" />
                 </Link>

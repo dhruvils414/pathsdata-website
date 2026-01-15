@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export const AWSPartnerBadge = () => (
-  <div className="inline-flex items-center gap-4 px-6 py-4 bg-slate-900 border border-slate-800 rounded-xl">
+  <div className="inline-flex items-center gap-4 px-4 py-4 bg-slate-900 border border-slate-800 rounded-xl">
     <Image 
       src="/aws-partner-badge.png" 
       alt="AWS Select Tier Services Partner" 

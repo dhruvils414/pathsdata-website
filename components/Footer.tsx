@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Footer = () => (
-  <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800/50">
-    <div className="max-w-[1400px] mx-auto">
+  <footer className="py-12 px-4 bg-slate-950 border-t border-slate-800/50">
+    <div className="max-w-[1600px] mx-auto">
       <div className="grid grid-cols-4 gap-8 mb-8">
         {/* Logo */}
         <div>

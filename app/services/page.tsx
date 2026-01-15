@@ -18,10 +18,10 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="py-16 px-6">
-      <div className="max-w-[1400px] mx-auto">
+    <div className="py-16 px-4">
+      <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-6 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">Our Services</span>
+          <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">Our Services</span>
           <h1 className="text-3xl font-bold text-white mb-2">End-to-End AWS</h1>
           <h2 className="text-3xl font-bold"><GradientText>Consulting Services</GradientText></h2>
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">From data engineering to AI/ML, we help you build and scale on AWS.</p>

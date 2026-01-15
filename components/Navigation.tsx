@@ -10,8 +10,8 @@ export const Navigation = () => {
   const isActive = (path: string) => pathname === path || pathname.startsWith(path + '/');
 
   return (
-    <header className="w-full bg-slate-950 border-b border-slate-800/50 px-6 py-4 sticky top-0 z-50">
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between">
+    <header className="w-full bg-slate-950 border-b border-slate-800/50 px-4 py-4 sticky top-0 z-50">
+      <div className="max-w-[1600px] mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image src="/logo-white.png" alt="PATHSDATA" width={220} height={70} className="h-16 w-auto" />
         </Link>
@@ -24,27 +24,27 @@ export const Navigation = () => {
             </button>
             <div className="dropdown-menu">
               <div className="bg-slate-900 border border-slate-800 rounded-lg shadow-xl py-2">
-                <Link href="/services/data-engineering" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/services/data-engineering" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">Data Engineering</p>
                   <p className="text-slate-400 text-xs">Cloud-native data platforms</p>
                 </Link>
-                <Link href="/services/business-intelligence" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/services/business-intelligence" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">Business Intelligence</p>
                   <p className="text-slate-400 text-xs">Dashboards & KPIs</p>
                 </Link>
-                <Link href="/services/ai-ml" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/services/ai-ml" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">AI & Machine Learning</p>
                   <p className="text-slate-400 text-xs">Predictive models</p>
                 </Link>
-                <Link href="/services/generative-ai" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/services/generative-ai" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">Generative AI</p>
                   <p className="text-slate-400 text-xs">RAG & AI agents</p>
                 </Link>
-                <Link href="/services/mlops" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/services/mlops" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">MLOps</p>
                   <p className="text-slate-400 text-xs">ML pipelines</p>
                 </Link>
-                <Link href="/services/cloud-migration" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/services/cloud-migration" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">Cloud Migration</p>
                   <p className="text-slate-400 text-xs">AWS migrations</p>
                 </Link>
@@ -59,15 +59,15 @@ export const Navigation = () => {
             </button>
             <div className="dropdown-menu">
               <div className="bg-slate-900 border border-slate-800 rounded-lg shadow-xl py-2">
-                <Link href="/programs/aws-poc" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/programs/aws-poc" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">Free AWS-Funded POC</p>
                   <p className="text-slate-400 text-xs">Pre-Seed to Series B</p>
                 </Link>
-                <Link href="/programs/ai-assessment" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/programs/ai-assessment" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">AI Blueprint</p>
                   <p className="text-slate-400 text-xs">For startups</p>
                 </Link>
-                <Link href="/programs/aws-map" className="block px-6 py-3 hover:bg-slate-800">
+                <Link href="/programs/aws-map" className="block px-4 py-3 hover:bg-slate-800">
                   <p className="text-white font-medium text-sm">Accelerate Migration</p>
                   <p className="text-slate-400 text-xs">AWS MAP program</p>
                 </Link>

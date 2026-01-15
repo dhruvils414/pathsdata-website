@@ -32,10 +32,10 @@ export default function ContactPage() {
       />
       <BreadcrumbJsonLd items={breadcrumbs} />
 
-      <div className="py-16 px-6">
-        <div className="max-w-[1000px] mx-auto">
+      <div className="py-16 px-4">
+        <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-10">
-            <span className="inline-block px-6 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
+            <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
               Contact Us
             </span>
             <h1 className="text-3xl font-bold text-white mb-2">Let&apos;s Start a Conversation</h1>
@@ -64,25 +64,25 @@ export default function ContactPage() {
                 name="name"
                 placeholder="Your Name"
                 required
-                className="w-full px-6 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
+                className="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email Address"
                 required
-                className="w-full px-6 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
+                className="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
               />
             </div>
             <input
               type="text"
               name="company"
               placeholder="Company Name"
-              className="w-full px-6 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
+              className="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
             />
             <select 
               name="interest"
-              className="w-full px-6 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-400 focus:outline-none focus:border-violet-500"
+              className="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-400 focus:outline-none focus:border-violet-500"
             >
               <option value="">What are you interested in?</option>
               <option value="data-engineering">Data Engineering</option>
@@ -98,11 +98,11 @@ export default function ContactPage() {
               name="message"
               placeholder="Tell us about your project..."
               rows={5}
-              className="w-full px-6 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 resize-none"
+              className="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 resize-none"
             />
             <button
               type="submit"
-              className="w-full px-6 py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 text-white rounded-full hover:opacity-90 transition-opacity text-sm font-medium"
+              className="w-full px-4 py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 text-white rounded-full hover:opacity-90 transition-opacity text-sm font-medium"
             >
               Send Message
             </button>

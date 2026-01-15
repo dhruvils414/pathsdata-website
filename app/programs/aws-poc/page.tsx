@@ -25,14 +25,14 @@ const whatYouGet = [
 
 export default function AWSPocPage() {
   return (
-    <div className="py-12 px-6">
-      <div className="max-w-[1400px] mx-auto">
+    <div className="py-12 px-4">
+      <div className="max-w-[1600px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-16 relative">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[600px] h-[300px] border border-slate-800/30 rounded-full" />
           </div>
-          <div className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-4">
             <span className="w-2 h-2 bg-emerald-400 rounded-full" />
             <span className="text-emerald-400 text-sm">AWS Select Tier Consulting Partner · 2–4 week delivery</span>
           </div>
@@ -49,7 +49,7 @@ export default function AWSPocPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {badges.map((badge, i) => (
-              <span key={i} className="inline-flex items-center gap-2 px-6 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-sm text-slate-300">
+              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-full text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-violet-400" />{badge}
               </span>
             ))}
