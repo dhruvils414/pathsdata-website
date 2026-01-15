@@ -39,10 +39,10 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <div className="py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-16 px-6">
+      <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
+          <span className="inline-block px-6 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
             Blog
           </span>
           <h1 className="text-3xl font-bold text-white mb-2">
@@ -95,11 +95,11 @@ export default function BlogPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-2 bg-slate-900/60 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
+              className="flex-1 px-6 py-2 bg-slate-900/60 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
             />
             <button
               type="submit"
-              className="px-4 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+              className="px-6 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
             >
               Subscribe
             </button>

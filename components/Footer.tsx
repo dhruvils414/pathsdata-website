@@ -2,13 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Footer = () => (
-  <footer className="py-12 px-4 bg-slate-950 border-t border-slate-800/50">
-    <div className="max-w-7xl mx-auto">
+  <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800/50">
+    <div className="max-w-[1400px] mx-auto">
       <div className="grid grid-cols-4 gap-8 mb-8">
         {/* Logo */}
         <div>
           <Link href="/" className="inline-block mb-4">
-            <Image src="/logo-white.png" alt="PATHSDATA" width={160} height={50} className="h-12 w-auto" />
+            <Image src="/logo-white.png" alt="PATHSDATA" width={200} height={60} className="h-14 w-auto" />
           </Link>
           <p className="text-slate-500 text-sm">
             AWS Select Tier Consulting Partner specializing in AI, Data Engineering, and Cloud Solutions.

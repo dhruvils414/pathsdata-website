@@ -18,10 +18,10 @@ const teamMembers = [
 
 export default function TeamPage() {
   return (
-    <div className="py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-16 px-6">
+      <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
+          <span className="inline-block px-6 py-2 bg-slate-800/80 rounded-full text-slate-400 text-sm mb-4 border border-slate-700/50">
             Our Team
           </span>
           <h1 className="text-3xl font-bold text-white mb-2">
