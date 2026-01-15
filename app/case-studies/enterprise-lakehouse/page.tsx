@@ -223,13 +223,6 @@ export default function RealEstateLakehouseCaseStudy() {
               </div>
             ))}
           </div>
-
-          <div className="mt-8 p-6 bg-red-500/5 border border-red-500/20 rounded-xl">
-            <p className="text-slate-300 italic">
-              "When a report showed wrong numbers, we'd spend a week just figuring out which vendor was responsible. By the time we fixed it, the data was already stale and we'd have to start over."
-            </p>
-            <p className="text-slate-500 text-sm mt-2">— VP of Operations</p>
-          </div>
         </div>
 
         {/* The Solution */}
@@ -336,14 +329,6 @@ export default function RealEstateLakehouseCaseStudy() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Quote */}
-        <div className="mb-16 p-8 bg-gradient-to-br from-violet-500/10 to-indigo-500/10 border border-violet-500/20 rounded-2xl">
-          <p className="text-xl text-slate-300 italic mb-4">
-            "We went from waiting a week for reports that might be wrong, to getting real-time dashboards we actually trust. More importantly, we own our data now — no more vendor finger-pointing."
-          </p>
-          <p className="text-slate-400">— VP of Operations</p>
         </div>
 
         {/* CTA */}
