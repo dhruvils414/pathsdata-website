@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Mail, MapPin } from 'lucide-react';
 import { WebPageJsonLd, BreadcrumbJsonLd } from '@/components/seo/json-ld';
 import { siteConfig } from '@/lib/seo-config';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us | AWS Select Tier Consulting Partner',
@@ -34,7 +35,7 @@ export default function ContactPage() {
       <BreadcrumbJsonLd items={breadcrumbs} />
 
       <div className="py-16 px-8">
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-[800px] mx-auto">
           <div className="text-center mb-10">
             {/* AWS Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6">
@@ -61,56 +62,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <form className="space-y-4" action="#" method="POST">
-            <div className="grid grid-cols-2 gap-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-                className="w-full px-8 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-                className="w-full px-8 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
-              />
-            </div>
-            <input
-              type="text"
-              name="company"
-              placeholder="Company Name"
-              className="w-full px-8 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
-            />
-            <select 
-              name="interest"
-              className="w-full px-8 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-400 focus:outline-none focus:border-violet-500"
-            >
-              <option value="">What are you interested in?</option>
-              <option value="data-engineering">Data Engineering</option>
-              <option value="ai-ml">AI & Machine Learning</option>
-              <option value="genai">Generative AI</option>
-              <option value="bi">Business Intelligence</option>
-              <option value="mlops">MLOps</option>
-              <option value="cloud-migration">Cloud Migration</option>
-              <option value="aws-poc">AWS POC Program</option>
-              <option value="other">Other</option>
-            </select>
-            <textarea
-              name="message"
-              placeholder="Tell us about your project..."
-              rows={5}
-              className="w-full px-8 py-3 bg-slate-900/60 border border-slate-800 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 resize-none"
-            />
-            <button
-              type="submit"
-              className="w-full px-8 py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 text-white rounded-full hover:opacity-90 transition-opacity text-sm font-medium"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </>
