@@ -202,7 +202,7 @@ export default function AWSPocPage() {
             Accelerate with Generative AI, Agentic AI, ML and Data Solutions on AWS
           </p>
           <p className="text-slate-400 mb-8 max-w-3xl mx-auto text-lg">
-            Whether you&apos;re validating AI capabilities, testing migration strategies, or proving security architectures, we build working demonstrations using your data, your constraints, your reality. <span className="text-white font-medium">AWS funds the validation. We provide the expertise. You get certainty.</span>
+            Whether you&apos;re validating AI capabilities, testing ML models, or proving data architectures, we build working demonstrations using your data, your constraints, your reality. <span className="text-white font-medium">AWS funds the validation. We provide the expertise. You get certainty.</span>
           </p>
           
           <div className="flex gap-4 justify-center mb-10 flex-wrap">
