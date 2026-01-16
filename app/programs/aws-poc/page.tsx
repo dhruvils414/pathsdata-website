@@ -268,8 +268,9 @@ export default function AWSPocPage() {
           </div>
           
           <div className="p-6 bg-gradient-to-r from-emerald-500/10 to-violet-500/10 border border-emerald-500/20 rounded-xl text-center">
-            <p className="text-lg text-white font-semibold mb-2">Investment: $0</p>
+            <p className="text-lg text-white font-semibold mb-2">Investment: $0*</p>
             <p className="text-slate-400">Zero cost to your organization. AWS funds the POC through their Partner Program.</p>
+            <p className="text-slate-500 text-xs mt-3">*Subject to AWS program eligibility and terms & conditions</p>
           </div>
         </div>
 
@@ -318,9 +319,9 @@ export default function AWSPocPage() {
           
           <div className="text-center mt-8">
             <p className="text-slate-400 mb-4">Not seeing your specific challenge?</p>
-            <Link href="/contact" className="text-violet-400 hover:text-violet-300 inline-flex items-center gap-2">
-              Schedule a technical discussion <ArrowRight className="w-4 h-4" />
-            </Link>
+            <a href="https://app.usemotion.com/meet/dhruvil-shah-hqvx/poc" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 inline-flex items-center gap-2">
+              Schedule Technical Discussion <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
 
@@ -418,7 +419,8 @@ export default function AWSPocPage() {
             <div className="p-6 bg-gradient-to-br from-orange-500/20 to-amber-500/20 border border-orange-500/30 rounded-xl text-center">
               <DollarSign className="w-8 h-8 text-orange-400 mx-auto mb-3" />
               <p className="text-white font-semibold mb-2">AWS Investment</p>
-              <p className="text-slate-400 text-sm">AWS covers POC costs through their Partner Program—professional services, infrastructure, and development. <span className="text-orange-400 font-semibold">Zero cost to you.</span></p>
+              <p className="text-slate-400 text-sm">AWS covers POC costs through their Partner Program—professional services, infrastructure, and development. <span className="text-orange-400 font-semibold">Zero cost to you.*</span></p>
+              <p className="text-slate-500 text-xs mt-2">*Subject to eligibility & terms</p>
             </div>
           </div>
           
@@ -462,7 +464,7 @@ export default function AWSPocPage() {
                 <h4 className="text-white font-bold text-lg mb-3">Technical Assessment Call</h4>
                 <p className="text-slate-400 text-sm mb-6">30-minute video conversation with one of our senior architects. We&apos;ll discuss your validation challenge, assess POC fit, explore AWS funding eligibility, and provide honest guidance.</p>
                 <a href="https://app.usemotion.com/meet/dhruvil-shah-hqvx/poc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-violet-500 text-violet-400 rounded-lg hover:bg-violet-500/10 transition-colors">
-                  Schedule Technical Assessment <ArrowRight className="w-4 h-4" />
+                  Schedule Technical Discussion <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
               <div className="p-6 bg-slate-900/80 rounded-xl text-center">
