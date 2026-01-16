@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { CheckCircle2, ArrowRight, Clock, Users, Shield, Zap, Database, Brain, Cloud, BarChart3, Cpu, MessageSquare, Factory, DollarSign } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Clock, Users, Shield, Zap, Brain, BarChart3, Cpu, MessageSquare, Factory, DollarSign } from 'lucide-react';
 import { GradientButton, GradientText } from '@/components/ui/buttons';
 import { siteConfig } from '@/lib/seo-config';
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const badges = [
   { text: 'AWS Select Tier Partner', icon: CheckCircle2 },
   { text: 'AWS Funding Available', icon: CheckCircle2 },
-  { text: 'No Cost to Your Organization', icon: CheckCircle2 },
+  { text: 'No Cost to You*', icon: CheckCircle2 },
   { text: '2–4 Week Delivery', icon: Clock },
 ];
 
@@ -92,8 +92,6 @@ const weeklyProcess = [
 const validationTypes = [
   { icon: Brain, title: 'Intelligent Systems Validation', desc: 'AI/ML feasibility, predictive analytics, computer vision' },
   { icon: Cpu, title: 'Agentic AI Applications', desc: 'Autonomous agents, multi-step workflows, tool orchestration' },
-  { icon: Cloud, title: 'Cloud Migration Confidence', desc: 'AWS migration viability, performance validation, cost modeling' },
-  { icon: Database, title: 'Data Platform Validation', desc: 'Data warehouse/lake architecture, ETL performance, analytics' },
   { icon: Zap, title: 'Modern Application Architecture', desc: 'Microservices, serverless, containers, API patterns' },
   { icon: MessageSquare, title: 'Customer Experience Innovation', desc: 'Contact center AI, personalization, recommendation systems' },
   { icon: Factory, title: 'Industry-Specific Validation', desc: 'Healthcare, fintech, manufacturing, retail solutions' },
@@ -209,9 +207,9 @@ export default function AWSPocPage() {
           
           <div className="flex gap-4 justify-center mb-10 flex-wrap">
             <GradientButton href="/contact">Start Your Free Assessment</GradientButton>
-            <Link href="/contact" className="px-6 py-3 border border-slate-600 text-white rounded-lg hover:border-violet-500 transition-colors">
+            <a href="https://app.usemotion.com/meet/dhruvil-shah-hqvx/poc" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-slate-600 text-white rounded-lg hover:border-violet-500 transition-colors">
               Schedule Technical Discussion
-            </Link>
+            </a>
           </div>
           
           <div className="flex flex-wrap justify-center gap-3">
@@ -221,6 +219,7 @@ export default function AWSPocPage() {
               </span>
             ))}
           </div>
+          <p className="text-slate-500 text-xs mt-4">*Subject to AWS program eligibility and terms & conditions</p>
         </div>
 
         {/* Program Journey */}
@@ -424,21 +423,27 @@ export default function AWSPocPage() {
           </div>
           
           {/* What Happens After */}
-          <div className="mt-10 p-6 bg-slate-900/60 border border-slate-800/60 rounded-xl">
-            <h4 className="text-white font-semibold text-lg mb-4 text-center">What Happens After POC</h4>
-            <p className="text-slate-400 text-center mb-6">You receive complete documentation, architecture diagrams, cost projections, and implementation roadmaps. What you do next is entirely your decision:</p>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-slate-800/40 rounded-lg">
-                <p className="text-white font-medium">Implement Yourself</p>
-                <p className="text-slate-500 text-sm">Everything needed to build internally</p>
+          <div className="mt-10 p-8 bg-gradient-to-br from-slate-900/80 to-slate-800/40 border border-slate-700/50 rounded-2xl">
+            <div className="text-center mb-8">
+              <p className="text-violet-400 text-xs font-semibold tracking-widest mb-2">AFTER THE POC</p>
+              <h4 className="text-white font-bold text-2xl mb-2">What Happens Next</h4>
+              <p className="text-slate-400 max-w-xl mx-auto">You receive complete documentation, architecture diagrams, cost projections, and implementation roadmaps. What you do next is entirely your decision.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="p-6 bg-slate-800/60 border border-slate-700/50 rounded-xl hover:border-violet-500/30 transition-colors group">
+                <div className="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="w-6 h-6 text-violet-400" />
+                </div>
+                <p className="text-white font-semibold text-lg mb-2">Implement Yourself</p>
+                <p className="text-slate-400 text-sm">Take our documentation, architecture diagrams, and roadmaps to build internally with your team.</p>
               </div>
-              <div className="text-center p-4 bg-slate-800/40 rounded-lg">
-                <p className="text-white font-medium">Engage Us</p>
-                <p className="text-slate-500 text-sm">Continue with accelerated delivery</p>
-              </div>
-              <div className="text-center p-4 bg-slate-800/40 rounded-lg">
-                <p className="text-white font-medium">Choose Another Partner</p>
-                <p className="text-slate-500 text-sm">Clean knowledge transfer</p>
+              <div className="p-6 bg-gradient-to-br from-violet-500/10 to-indigo-500/10 border border-violet-500/30 rounded-xl hover:border-violet-500/50 transition-colors group">
+                <div className="w-12 h-12 bg-violet-500/30 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Zap className="w-6 h-6 text-violet-400" />
+                </div>
+                <p className="text-white font-semibold text-lg mb-2">Engage Us</p>
+                <p className="text-slate-400 text-sm">Continue with accelerated delivery. We already know your systems, requirements, and goals.</p>
+                <p className="text-violet-400 text-xs mt-3 font-medium">Recommended for fastest time-to-production →</p>
               </div>
             </div>
           </div>
@@ -456,9 +461,9 @@ export default function AWSPocPage() {
                 <p className="text-slate-500 text-sm mb-2">Option 1</p>
                 <h4 className="text-white font-bold text-lg mb-3">Technical Assessment Call</h4>
                 <p className="text-slate-400 text-sm mb-6">30-minute video conversation with one of our senior architects. We&apos;ll discuss your validation challenge, assess POC fit, explore AWS funding eligibility, and provide honest guidance.</p>
-                <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 border border-violet-500 text-violet-400 rounded-lg hover:bg-violet-500/10 transition-colors">
+                <a href="https://app.usemotion.com/meet/dhruvil-shah-hqvx/poc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-violet-500 text-violet-400 rounded-lg hover:bg-violet-500/10 transition-colors">
                   Schedule Technical Assessment <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
               <div className="p-6 bg-slate-900/80 rounded-xl text-center">
                 <p className="text-slate-500 text-sm mb-2">Option 2</p>
